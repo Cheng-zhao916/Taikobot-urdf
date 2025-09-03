@@ -1,0 +1,3904 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="css_bot">
+  <link
+    name="Link_Stom">
+    <inertial>
+      <origin
+        xyz="-0.010395 6.7688E-09 -0.023836"
+        rpy="0 0 0" />
+      <mass
+        value="1.0621" />
+      <inertia
+        ixx="0.0038925"
+        ixy="-2.8123E-10"
+        ixz="3.9723E-05"
+        iyy="0.001901"
+        iyz="5.3901E-11"
+        izz="0.0051791" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Stom.STL" />
+      </geometry>
+      <material
+        name="CoolGray1C">
+        <color
+          rgba="0.9 0.9 0.9 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Stom.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_Stom_1">
+    <inertial>
+      <origin
+        xyz="-0.00760104950242152 -8.16738800348226E-10 0.0431330359785387"
+        rpy="0 0 0" />
+      <mass
+        value="1.09120545847975" />
+      <inertia
+        ixx="0.0035291046529339"
+        ixy="1.58514373681448E-10"
+        ixz="-4.08388755605739E-05"
+        iyy="0.00145987275495497"
+        iyz="2.35755287339547E-10"
+        izz="0.00428996022500754" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Stom_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray1C">
+        <color
+          rgba="0.9 0.9 0.9 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Stom_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Stom_1"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Stom" />
+    <child
+      link="Link_Stom_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_Stom_2">
+    <inertial>
+      <origin
+        xyz="-0.00617798342089961 9.69258275608772E-06 0.175039056480645"
+        rpy="0 0 0" />
+      <mass
+        value="2.55411858945128" />
+      <inertia
+        ixx="0.0330447440758719"
+        ixy="-1.10749041056143E-07"
+        ixz="0.00018400689487766"
+        iyy="0.0195516919886766"
+        iyz="2.08788417839773E-06"
+        izz="0.0140951894930034" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Stom_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray1C">
+        <color
+          rgba="0.9 0.9 0.9 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Stom_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Stom_2"
+    type="fixed">
+    <origin
+      xyz="0 0 0.108"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Stom_1" />
+    <child
+      link="Link_Stom_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.6"
+      upper="0.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_RShoulder_1">
+    <inertial>
+      <origin
+        xyz="0.0526993138939105 -0.0108285250828227 0.0120153601424977"
+        rpy="0 0 0" />
+      <mass
+        value="0.22436008904152" />
+      <inertia
+        ixx="0.000110606343158319"
+        ixy="6.33042195287753E-06"
+        ixz="-1.34435923655176E-05"
+        iyy="0.000279708883787942"
+        iyz="7.6415413976905E-07"
+        izz="0.000199344546225538" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RShoulder_1.STL" />
+      </geometry>
+      <material
+        name="Black">
+        <color
+          rgba="0.4 0.4 0.4 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RShoulder_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RShoulder_1"
+    type="revolute">
+    <origin
+      xyz="0 -0.1435 0.298"
+      rpy="3.1416 1.5708 0" />
+    <parent
+      link="Link_Stom_2" />
+    <child
+      link="Link_RShoulder_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="100"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_RShoulder_2">
+    <inertial>
+      <origin
+        xyz="-0.00919278113282453 -0.0262090385845012 -0.0270204406704604"
+        rpy="0 0 0" />
+      <mass
+        value="0.295164250786627" />
+      <inertia
+        ixx="0.000241545582831188"
+        ixy="1.2905993003123E-06"
+        ixz="-9.01693233840921E-06"
+        iyy="0.000281618212802564"
+        iyz="1.47494309594065E-06"
+        izz="0.000185886607534219" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RShoulder_2.STL" />
+      </geometry>
+      <material
+        name="Black">
+        <color
+          rgba="0.4 0.4 0.4 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RShoulder_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RShoulder_2"
+    type="revolute">
+    <origin
+      xyz="0.039 0.081 0"
+      rpy="-1.5708 1.5708 0" />
+    <parent
+      link="Link_RShoulder_1" />
+    <child
+      link="Link_RShoulder_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.2"
+      effort="100"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_RShoulder_3">
+    <inertial>
+      <origin
+        xyz="-0.0050292255927874 1.45597740222603E-06 -0.140384000605186"
+        rpy="0 0 0" />
+      <mass
+        value="0.299216908480878" />
+      <inertia
+        ixx="0.00110749831481239"
+        ixy="-1.11903745038465E-09"
+        ixz="0.000126955203324863"
+        iyy="0.00110531871737773"
+        iyz="3.25575630405315E-08"
+        izz="0.000482637023796558" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RShoulder_3.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RShoulder_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RShoulder_3"
+    type="revolute">
+    <origin
+      xyz="0 -0.284 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link_RShoulder_2" />
+    <child
+      link="Link_RShoulder_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="100"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_RElbow_1">
+    <inertial>
+      <origin
+        xyz="-0.00245421928023107 -0.0843351414367431 0.00416854388916815"
+        rpy="0 0 0" />
+      <mass
+        value="0.242731060300689" />
+      <inertia
+        ixx="0.000626338354994353"
+        ixy="-4.14375951631432E-05"
+        ixz="-1.56017336140974E-05"
+        iyy="0.000374866306493349"
+        iyz="-1.1687248730107E-05"
+        izz="0.00066113075594044" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RElbow_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RElbow_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RElbow_1"
+    type="revolute">
+    <origin
+      xyz="-0.008 -0.0065532 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="Link_RShoulder_3" />
+    <child
+      link="Link_RElbow_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="2.2"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_RElbow_2">
+    <inertial>
+      <origin
+        xyz="7.18961342559277E-05 -0.000360282308781629 -0.0475347118463018"
+        rpy="0 0 0" />
+      <mass
+        value="0.158787685430162" />
+      <inertia
+        ixx="0.000171996630320634"
+        ixy="7.78607075139518E-08"
+        ixz="-3.81467208085751E-07"
+        iyy="0.000178445648091556"
+        iyz="5.52381737061786E-06"
+        izz="7.8444581912449E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RElbow_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RElbow_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RElbow_2"
+    type="revolute">
+    <origin
+      xyz="-0.0065886 -0.283 0"
+      rpy="1.5708 0.61087 0" />
+    <parent
+      link="Link_RElbow_1" />
+    <child
+      link="Link_RElbow_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.2"
+      upper="3.2"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_RWrist">
+    <inertial>
+      <origin
+        xyz="-3.78173038768359E-05 -0.0616982963757688 -0.00213797037412256"
+        rpy="0 0 0" />
+      <mass
+        value="0.0902142977443489" />
+      <inertia
+        ixx="0.000157827218564051"
+        ixy="-1.11371620734417E-06"
+        ixz="7.68125657090408E-07"
+        iyy="7.37514900983847E-05"
+        iyz="-2.21689704274223E-06"
+        izz="8.9448371336846E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RWrist.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RWrist.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RWrist"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="Link_RElbow_2" />
+    <child
+      link="Link_RWrist" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  
+  
+  
+  
+  
+  <link
+    name="Link_RHand">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="1E-05"
+        ixy="0"
+        ixz="0"
+        iyy="1E-05"
+        iyz="0"
+        izz="1E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.001 0.001 0.001" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  
+  
+  <joint
+    name="Joint_RHand"
+    type="revolute">
+    <origin
+      xyz="0 -0.07 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_RWrist" />
+    <child
+      link="Link_RHand" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  
+  
+
+  <link
+    name="Link_LShoulder_1">
+    <inertial>
+      <origin
+        xyz="0.0510533433361345 -0.00326315277223052 -0.00926588156540074"
+        rpy="0 0 0" />
+      <mass
+        value="0.290934699369272" />
+      <inertia
+        ixx="0.000138660279827731"
+        ixy="1.22470230213397E-05"
+        ixz="1.34432948244159E-05"
+        iyy="0.000352507370976174"
+        iyz="-7.64157785142655E-07"
+        izz="0.000256248629367538" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LShoulder_1.STL" />
+      </geometry>
+      <material
+        name="Black">
+        <color
+          rgba="0.4 0.4 0.4 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LShoulder_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LShoulder_1"
+    type="revolute">
+    <origin
+      xyz="0 0.1435 0.298"
+      rpy="0 1.5708 0" />
+    <parent
+      link="Link_Stom_2" />
+    <child
+      link="Link_LShoulder_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_LShoulder_2">
+    <inertial>
+      <origin
+        xyz="-0.00919279828932673 -0.0262090339664297 0.0270204527291376"
+        rpy="0 0 0" />
+      <mass
+        value="0.295164282264257" />
+      <inertia
+        ixx="0.000241545396772354"
+        ixy="1.29059441831345E-06"
+        ixz="9.01650246544348E-06"
+        iyy="0.000281617999616376"
+        iyz="-1.47487765925017E-06"
+        izz="0.000185886599441572" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LShoulder_2.STL" />
+      </geometry>
+      <material
+        name="Black">
+        <color
+          rgba="0.4 0.4 0.4 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LShoulder_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LShoulder_2"
+    type="revolute">
+    <origin
+      xyz="0.039 0.081 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="Link_LShoulder_1" />
+    <child
+      link="Link_LShoulder_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.2"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_LShoulder_3">
+    <inertial>
+      <origin
+        xyz="-0.00502922561677471 -1.45601391268735E-06 0.140384000579655"
+        rpy="0 0 0" />
+      <mass
+        value="0.299216908463602" />
+      <inertia
+        ixx="0.00110749831524665"
+        ixy="1.11812019895739E-09"
+        ixz="-0.000126955201093836"
+        iyy="0.00110531871807052"
+        iyz="3.2556000409913E-08"
+        izz="0.000482637023951345" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LShoulder_3.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LShoulder_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LShoulder_3"
+    type="revolute">
+    <origin
+      xyz="0 -0.284 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="Link_LShoulder_2" />
+    <child
+      link="Link_LShoulder_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_LElbow_1">
+    <inertial>
+      <origin
+        xyz="-0.00242244016275873 -0.0843357594651711 -0.00416805387048946"
+        rpy="0 0 0" />
+      <mass
+        value="0.242785147456823" />
+      <inertia
+        ixx="0.000626371587316545"
+        ixy="-4.14696425589225E-05"
+        ixz="1.56040453777136E-05"
+        iyy="0.000374912863849707"
+        iyz="1.16689145799547E-05"
+        izz="0.000661179044762751" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LElbow_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LElbow_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LElbow_1"
+    type="revolute">
+    <origin
+      xyz="-0.008 -0.0065532 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link_LShoulder_3" />
+    <child
+      link="Link_LElbow_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="2.2"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_LElbow_2">
+    <inertial>
+      <origin
+        xyz="7.11991651743127E-05 -0.000361046082564515 0.0475376748447518"
+        rpy="0 0 0" />
+      <mass
+        value="0.158786049387992" />
+      <inertia
+        ixx="0.000171964623991344"
+        ixy="7.95763973462228E-08"
+        ixz="3.80210295994158E-07"
+        iyy="0.000178426550457842"
+        iyz="-5.5242827160403E-06"
+        izz="7.84373030335707E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LElbow_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LElbow_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LElbow_2"
+    type="revolute">
+    <origin
+      xyz="-0.0065886 -0.283 0"
+      rpy="-1.5708 -0.61087 0" />
+    <parent
+      link="Link_LElbow_1" />
+    <child
+      link="Link_LElbow_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.2"
+      upper="3.2"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_LWrist">
+    <inertial>
+      <origin
+        xyz="-3.77612508208336E-05 -0.0616983819606961 0.00213780181540502"
+        rpy="0 0 0" />
+      <mass
+        value="0.0902143819327976" />
+      <inertia
+        ixx="0.000157825667171504"
+        ixy="-1.11374466439326E-06"
+        ixz="-7.68207492668127E-07"
+        iyy="7.37508927218217E-05"
+        iyz="2.21760096429943E-06"
+        izz="8.94474097660853E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LWrist.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LWrist.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LWrist"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link_LElbow_2" />
+    <child
+      link="Link_LWrist" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  
+  
+  
+  
+  <link
+    name="Link_LHand">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="1E-05"
+        ixy="0"
+        ixz="0"
+        iyy="1E-05"
+        iyz="0"
+        izz="1E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.001 0.001 0.001" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  
+  
+  <joint
+    name="Joint_LHand"
+    type="revolute">
+    <origin
+      xyz="0 -0.07 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_LWrist" />
+    <child
+      link="Link_LHand" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link
+    name="Link_Head_1">
+    <inertial>
+      <origin
+        xyz="0.0138301833116303 -1.1884863730585E-08 0.0173354557591698"
+        rpy="0 0 0" />
+      <mass
+        value="0.0829512020115408" />
+      <inertia
+        ixx="3.29406996966869E-05"
+        ixy="9.29835887946738E-12"
+        ixz="3.48957105779506E-06"
+        iyy="3.09683706083239E-05"
+        iyz="-2.18565525883516E-12"
+        izz="4.82836893356411E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Head_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Head_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Head_1"
+    type="revolute">
+    <origin
+      xyz="-0.0332 0 0.4498"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Stom_2" />
+    <child
+      link="Link_Head_1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-0.6"
+      upper="0.6"
+      effort="20"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_Head_2">
+    <inertial>
+      <origin
+        xyz="0.0466059543339363 0.000809787703814823 0.0455253171004644"
+        rpy="0 0 0" />
+      <mass
+        value="0.471334696599592" />
+      <inertia
+        ixx="0.00219066265339623"
+        ixy="-1.80320823260219E-07"
+        ixz="0.00012661296650134"
+        iyy="0.00219575726148654"
+        iyz="1.07541415903684E-06"
+        izz="0.00217483040749328" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Head_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Head_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Head_2"
+    type="revolute">
+    <origin
+      xyz="-0.0012 0 0.033"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Head_1" />
+    <child
+      link="Link_Head_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="20"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_Mask">
+    <inertial>
+      <origin
+        xyz="0.119264325749082 -0.00109067122959426 0.034887866420321"
+        rpy="0 0 0" />
+      <mass
+        value="0.0506737660660327" />
+      <inertia
+        ixx="0.000206976982484592"
+        ixy="-1.1579157907833E-06"
+        ixz="-4.41753317674796E-06"
+        iyy="7.51929214388348E-05"
+        iyz="1.04063187391165E-06"
+        izz="0.000205442873219289" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Mask.STL" />
+      </geometry>
+      <material
+        name="BlackMask">
+        <color
+          rgba="0 0 0 0.8" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Mask.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Mask"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Head_2" />
+    <child
+      link="Link_Mask" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_HeadSet">
+    <inertial>
+      <origin
+        xyz="0.0417289420513811 -1.04973178990862E-05 0.0893099242836207"
+        rpy="0 0 0" />
+      <mass
+        value="0.0359125697522366" />
+      <inertia
+        ixx="0.000133156532306671"
+        ixy="1.80891772538677E-08"
+        ixz="-2.50471377994297E-05"
+        iyy="0.000182759920246342"
+        iyz="3.88327442923328E-09"
+        izz="0.000307577762207942" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_HeadSet.STL" />
+      </geometry>
+      <material
+        name="RedHeadSet">
+        <color
+          rgba="0.6 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_HeadSet.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_HeadSet"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Head_2" />
+    <child
+      link="Link_HeadSet" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_RLens">
+    <inertial>
+      <origin
+        xyz="0 1.33226762955019E-15 0.00750000000000003"
+        rpy="0 0 0" />
+      <mass
+        value="0.00425293105479718" />
+      <inertia
+        ixx="1.75699214201309E-07"
+        ixy="-1.28212994945719E-23"
+        ixz="-9.40319296583982E-24"
+        iyy="1.75699214201309E-07"
+        iyz="-4.243836930474E-23"
+        izz="1.91913513847723E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RLens.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RLens.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RLens"
+    type="fixed">
+    <origin
+      xyz="0.1106 -0.0315 0.0415"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="Link_Head_2" />
+    <child
+      link="Link_RLens" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_LLens">
+    <inertial>
+      <origin
+        xyz="0 0 0.00750000000000001"
+        rpy="0 0 0" />
+      <mass
+        value="0.00425293105479718" />
+      <inertia
+        ixx="1.75699214201309E-07"
+        ixy="-2.62629844485587E-23"
+        ixz="8.11898563536E-24"
+        iyy="1.75699214201309E-07"
+        iyz="-4.49282990814033E-23"
+        izz="1.91913513847723E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LLens.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LLens.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LLens"
+    type="fixed">
+    <origin
+      xyz="0.1106 0.0315 0.0415"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="Link_Head_2" />
+    <child
+      link="Link_LLens" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_Screen">
+    <inertial>
+      <origin
+        xyz="0.0661179273303542 -0.000163697358785393 0.0616276140288366"
+        rpy="0 0 0" />
+      <mass
+        value="0.486893916109835" />
+      <inertia
+        ixx="0.00206214533176528"
+        ixy="-3.13323040099946E-07"
+        ixz="3.91122026002132E-05"
+        iyy="0.00033209440096118"
+        iyz="-2.90758194358965E-07"
+        izz="0.00179235011982338" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Screen.STL" />
+      </geometry>
+      <material
+        name="Black">
+        <color
+          rgba="0.4 0.4 0.4 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Screen.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Screen"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Stom_2" />
+    <child
+      link="Link_Screen" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_R_Hip">
+    <inertial>
+      <origin
+        xyz="-0.00997561988040938 -0.162464062717018 0.019353535043174"
+        rpy="0 0 0" />
+      <mass
+        value="0.780411280182123" />
+      <inertia
+        ixx="0.00505927248424749"
+        ixy="0.000140216558568499"
+        ixz="-5.16439347373851E-05"
+        iyy="0.00113246968924035"
+        iyz="0.000152277809595868"
+        izz="0.00553935386704479" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_R_Hip.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_R_Hip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_R_Hip"
+    type="revolute">
+    <origin
+      xyz="0.0015024 -0.0995 -0.0404"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link_Stom" />
+    <child
+      link="Link_R_Hip" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_R_Knee">
+    <inertial>
+      <origin
+        xyz="-0.00734722578258825 -0.242439483600495 0.00126179244797699"
+        rpy="0 0 0" />
+      <mass
+        value="0.62189637360919" />
+      <inertia
+        ixx="0.00612595790612977"
+        ixy="0.000139669417998852"
+        ixz="-4.66295725362517E-06"
+        iyy="0.000512086301696514"
+        iyz="3.08891465096266E-05"
+        izz="0.00647011626045631" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_R_Knee.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_R_Knee.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_R_Knee"
+    type="revolute">
+    <origin
+      xyz="0.00019762 -0.395 0.0202"
+      rpy="0 0 0" />
+    <parent
+      link="Link_R_Hip" />
+    <child
+      link="Link_R_Knee" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_R_Ankle">
+    <inertial>
+      <origin
+        xyz="-0.0204686215952675 -0.0341019673722565 -1.09940580819701E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.128774238644745" />
+      <inertia
+        ixx="8.80913953315863E-05"
+        ixy="-1.54133430600762E-05"
+        ixz="-7.07087760344772E-10"
+        iyy="7.05350993137179E-05"
+        iyz="-1.63608154200333E-10"
+        izz="9.1088449867769E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_R_Ankle.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_R_Ankle.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_R_Ankle"
+    type="revolute">
+    <origin
+      xyz="0 -0.465 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_R_Knee" />
+    <child
+      link="Link_R_Ankle" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_R_Foot">
+    <inertial>
+      <origin
+        xyz="0.079647735491064 0.00545306963133402 -0.0209546890089578"
+        rpy="0 0 0" />
+      <mass
+        value="0.593869861360272" />
+      <inertia
+        ixx="0.000572148380260903"
+        ixy="0.000186325350234356"
+        ixz="-4.22714916872308E-05"
+        iyy="0.00228735961827098"
+        iyz="3.98496666177345E-07"
+        izz="0.00277228959739648" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_R_Foot.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_R_Foot.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_R_Foot"
+    type="revolute">
+    <origin
+      xyz="-0.025 -0.081 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link_R_Ankle" />
+    <child
+      link="Link_R_Foot" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_L_Hip">
+    <inertial>
+      <origin
+        xyz="-0.0100471882001052 -0.162681945706719 -0.0192171741598516"
+        rpy="0 0 0" />
+      <mass
+        value="0.778784348724244" />
+      <inertia
+        ixx="0.00505365436800784"
+        ixy="0.000139679215913995"
+        ixz="5.00166934907534E-05"
+        iyy="0.00113193919214933"
+        iyz="-0.000152940746799196"
+        izz="0.00553048557681037" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_L_Hip.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_L_Hip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_L_Hip"
+    type="revolute">
+    <origin
+      xyz="0.0015024 0.0995 -0.0404"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link_Stom" />
+    <child
+      link="Link_L_Hip" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_L_Knee">
+    <inertial>
+      <origin
+        xyz="-0.00734712778602507 -0.242454989901196 -0.00125765306234289"
+        rpy="0 0 0" />
+      <mass
+        value="0.621957390627357" />
+      <inertia
+        ixx="0.00612645836425476"
+        ixy="0.000139929549779588"
+        ixz="4.59771595840403E-06"
+        iyy="0.000512051366466895"
+        iyz="-3.1110827792321E-05"
+        izz="0.00647053672364023" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_L_Knee.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_L_Knee.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_L_Knee"
+    type="revolute">
+    <origin
+      xyz="0.00019763 -0.395 -0.0198"
+      rpy="0 0 0" />
+    <parent
+      link="Link_L_Hip" />
+    <child
+      link="Link_L_Knee" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_L_Ankle">
+    <inertial>
+      <origin
+        xyz="-0.0204686215952681 -0.0341019673722559 -1.09940580583778E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.128774238644744" />
+      <inertia
+        ixx="8.8091395331586E-05"
+        ixy="-1.54133430600759E-05"
+        ixz="-7.07087760162591E-10"
+        iyy="7.05350993137168E-05"
+        iyz="-1.63608154747323E-10"
+        izz="9.10884498677681E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_L_Ankle.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_L_Ankle.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_L_Ankle"
+    type="revolute">
+    <origin
+      xyz="0 -0.465 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_L_Knee" />
+    <child
+      link="Link_L_Ankle" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_L_Foot">
+    <inertial>
+      <origin
+        xyz="0.0796354708604636 0.00545602768602996 0.0209512184613925"
+        rpy="0 0 0" />
+      <mass
+        value="0.593795680504549" />
+      <inertia
+        ixx="0.000572089892832752"
+        ixy="0.000186193682233326"
+        ixz="4.22982529391076E-05"
+        iyy="0.00228694119243288"
+        iyz="-4.65859999824842E-07"
+        izz="0.00277182036156883" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_L_Foot.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_L_Foot.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_L_Foot"
+    type="revolute">
+    <origin
+      xyz="-0.025 -0.081 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="Link_L_Ankle" />
+    <child
+      link="Link_L_Foot" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_Robot">
+    <inertial>
+      <origin
+        xyz="0.001184 -1.3132E-09 -0.061713"
+        rpy="0 0 0" />
+      <mass
+        value="0.11527" />
+      <inertia
+        ixx="0.00022443"
+        ixy="-7.1448E-12"
+        ixz="-1.4317E-07"
+        iyy="0.00012492"
+        iyz="-8.0579E-13"
+        izz="0.00034604" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Robot.STL" />
+      </geometry>
+      <material
+        name="CoolGray1C">
+        <color
+          rgba="0.9 0.9 0.9 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_Robot.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Robot"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_Stom" />
+    <child
+      link="Link_Robot" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  
+  
+  
+  
+  
+    <link
+    name="Link_RThumb_1">
+    <inertial>
+      <origin
+        xyz="0.0140650741619172 -0.000866700389487746 0.000493641261576472"
+        rpy="0 0 0" />
+      <mass
+        value="0.00760049826248115" />
+      <inertia
+        ixx="7.53993196111431E-07"
+        ixy="-7.85688563141637E-09"
+        ixz="1.82761019021648E-08"
+        iyy="6.9648868128391E-07"
+        iyz="1.53381809327462E-08"
+        izz="4.843828191515E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RThumb_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RThumb_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RThumb_1"
+    type="revolute">
+    <origin
+      xyz="0.003 -0.045397 0.03103"
+      rpy="2.9995 -1.4826 1.7134" />
+    <parent
+      link="Link_RWrist" />
+    <child
+      link="Link_RThumb_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_RThumb_2">
+    <inertial>
+      <origin
+        xyz="0.0173127856402474 -0.0001340555630263 2.16970978961228E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.00708329727896718" />
+      <inertia
+        ixx="5.04037387490672E-07"
+        ixy="-9.9660246298644E-10"
+        ixz="4.69943053853463E-13"
+        iyy="6.9687237987952E-07"
+        iyz="-1.78856206059794E-13"
+        izz="5.78434914296183E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RThumb_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RThumb_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RThumb_2"
+    type="fixed">
+    <origin
+      xyz="0.029882 0.00037406 0.0027249"
+      rpy="-0.5236 -0.17453 0.012517" />
+    <parent
+      link="Link_RThumb_1" />
+    <child
+      link="Link_RThumb_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_RThumb_1"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_RThumb_3">
+    <inertial>
+      <origin
+        xyz="0.0119386269568158 -0.00047726662252473 7.29735140647669E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.00525708327193122" />
+      <inertia
+        ixx="2.36694125920009E-07"
+        ixy="-2.70310461402188E-08"
+        ixz="2.30328012641141E-12"
+        iyy="2.94242791405694E-07"
+        iyz="9.08055406898281E-13"
+        izz="3.22801505060777E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RThumb_3.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RThumb_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RThumb_3"
+    type="fixed">
+    <origin
+      xyz="0.035 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_RThumb_2" />
+    <child
+      link="Link_RThumb_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_RThumb_2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_RIndex_1">
+    <inertial>
+      <origin
+        xyz="0.0185238984506864 -0.000125937950048477 -4.58839659212007E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00449425043848453" />
+      <inertia
+        ixx="2.15205930418439E-07"
+        ixy="-7.2123907915719E-10"
+        ixz="2.73292347778707E-11"
+        iyy="3.40384122566586E-07"
+        iyz="-1.62240605972699E-11"
+        izz="2.93684053228689E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RIndex_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RIndex_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RIndex_1"
+    type="revolute">
+    <origin
+      xyz="0.002 -0.11282 0.03361"
+      rpy="0 -0.087266 -1.5708" />
+    <parent
+      link="Link_RWrist" />
+    <child
+      link="Link_RIndex_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_RIndex_2">
+    <inertial>
+      <origin
+        xyz="0.0109552144291361 -0.000710332764787408 4.87469036580812E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00280391892561082" />
+      <inertia
+        ixx="8.9191983587886E-08"
+        ixy="-7.28832341636794E-09"
+        ixz="-3.28391516315246E-12"
+        iyy="1.11901678548665E-07"
+        iyz="6.59768762393691E-12"
+        izz="1.06518258060323E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RIndex_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />s
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RIndex_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RIndex_2"
+    type="fixed">
+    <origin
+      xyz="0.037 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_RIndex_1" />
+    <child
+      link="Link_RIndex_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_RIndex_1"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_RIndex_3">
+    <inertial>
+      <origin
+        xyz="0.0115790835288717 -0.000175670628243585 2.27585620302118E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.00254013681905526" />
+      <inertia
+        ixx="6.37572268264825E-08"
+        ixy="-8.5200097859829E-09"
+        ixz="3.2463080248338E-11"
+        iyy="8.96695930587408E-08"
+        iyz="3.87818885230601E-11"
+        izz="9.39889377118956E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RIndex_3.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RIndex_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RIndex_3"
+    type="fixed">
+    <origin
+      xyz="0.0225 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_RIndex_2" />
+    <child
+      link="Link_RIndex_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_RIndex_2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_RMajor_1">
+    <inertial>
+      <origin
+        xyz="0.0196007263886085 -0.0001347564187624 -4.0771949519347E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546384233515643" />
+      <inertia
+        ixx="2.90857369590845E-07"
+        ixy="-3.7801729181768E-10"
+        ixz="2.7353697124717E-11"
+        iyy="4.54524664157687E-07"
+        iyz="-1.97606566252737E-11"
+        izz="3.92361454659582E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RMajor_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RMajor_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RMajor_1"
+    type="revolute">
+    <origin
+      xyz="0.002 -0.1145 0.006"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="Link_RWrist" />
+    <child
+      link="Link_RMajor_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_RMajor_2">
+    <inertial>
+      <origin
+        xyz="0.0116486639163798 -0.000702186510968983 2.86493438445001E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00351617504597625" />
+      <inertia
+        ixx="1.2665472017777E-07"
+        ixy="-9.89893387427191E-09"
+        ixz="-3.85504671221877E-12"
+        iyy="1.59849556256639E-07"
+        iyz="6.05192111867138E-12"
+        izz="1.52787960983799E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RMajor_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RMajor_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RMajor_2"
+    type="fixed">
+    <origin
+      xyz="0.039 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_RMajor_1" />
+    <child
+      link="Link_RMajor_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_RMajor_1"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_RMajor_3">
+    <inertial>
+      <origin
+        xyz="0.0120357954291658 -0.0002168176016695 2.74109565517877E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0031118218613676" />
+      <inertia
+        ixx="8.93862399938747E-08"
+        ixy="-1.21559780061049E-08"
+        ixz="5.75108206324178E-12"
+        iyy="1.2794286537599E-07"
+        iyz="2.54772945542481E-12"
+        izz="1.35101776695167E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RMajor_3.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RMajor_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RMajor_3"
+    type="fixed">
+    <origin
+      xyz="0.024 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_RMajor_2" />
+    <child
+      link="Link_RMajor_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_RMajor_2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_RRing_1">
+    <inertial>
+      <origin
+        xyz="0.0185238937903398 -0.00012593442971201 -4.40970636644833E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00449424653456038" />
+      <inertia
+        ixx="2.15205750433413E-07"
+        ixy="-7.2109947988286E-10"
+        ixz="2.74316654621698E-11"
+        iyy="3.40383944325955E-07"
+        iyz="-1.54278599720868E-11"
+        izz="2.93684135042829E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RRing_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RRing_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RRing_1"
+    type="revolute">
+    <origin
+      xyz="0.002 -0.1122 -0.02161"
+      rpy="0 0.087266 -1.5708" />
+    <parent
+      link="Link_RWrist" />
+    <child
+      link="Link_RRing_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_RRing_2">
+    <inertial>
+      <origin
+        xyz="0.010955213839177 -0.000710332931102009 4.86656602932678E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00280391986818482" />
+      <inertia
+        ixx="8.91919857057655E-08"
+        ixy="-7.28833494976697E-09"
+        ixz="-3.25143429068213E-12"
+        iyy="1.11901768400301E-07"
+        iyz="6.62651005186212E-12"
+        izz="1.06518305367442E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RRing_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RRing_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RRing_2"
+    type="fixed">
+    <origin
+      xyz="0.037 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_RRing_1" />
+    <child
+      link="Link_RRing_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_RRing_1"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_RRing_3">
+    <inertial>
+      <origin
+        xyz="0.0115786695072247 -0.000175665524545371 2.21807422717823E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.00254021691656577" />
+      <inertia
+        ixx="6.37571833436295E-08"
+        ixy="-8.51974807244698E-09"
+        ixz="3.11116022257094E-11"
+        iyy="8.96765457277619E-08"
+        iyz="3.88746755362711E-11"
+        izz="9.39952904042309E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RRing_3.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RRing_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RRing_3"
+    type="fixed">
+    <origin
+      xyz="0.0225 0 0"
+      rpy="0 0 0.018814" />
+    <parent
+      link="Link_RRing_2" />
+    <child
+      link="Link_RRing_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_RRing_2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_RLittle_1">
+    <inertial>
+      <origin
+        xyz="0.0152875006195252 -0.000111811379262194 -7.43901488797771E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00309307243256906" />
+      <inertia
+        ixx="1.12320137885361E-07"
+        ixy="-7.85044245495428E-10"
+        ixz="2.03748781059237E-11"
+        iyy="1.70740544190538E-07"
+        iyz="-1.53840450916917E-11"
+        izz="1.47320566219947E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RLittle_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RLittle_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RLittle_1"
+    type="revolute">
+    <origin
+      xyz="0.002 -0.1057 -0.046247"
+      rpy="0 0.20944 -1.5708" />
+    <parent
+      link="Link_RWrist" />
+    <child
+      link="Link_RLittle_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_RLittle_2">
+    <inertial>
+      <origin
+        xyz="0.0104115108624748 -0.000572529625667395 6.12915531772451E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00171550730568762" />
+      <inertia
+        ixx="4.1527330331584E-08"
+        ixy="-2.92585177592537E-09"
+        ixz="-1.96062834001558E-12"
+        iyy="5.12635989560815E-08"
+        iyz="3.94229446480886E-12"
+        izz="4.80167727409877E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RLittle_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RLittle_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RLittle_2"
+    type="fixed">
+    <origin
+      xyz="0.031 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_RLittle_1" />
+    <child
+      link="Link_RLittle_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_RLittle_1"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_RLittle_3">
+    <inertial>
+      <origin
+        xyz="0.0106227968710161 -7.47753698464859E-05 7.75469095520842E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00169737799639663" />
+      <inertia
+        ixx="3.18900150531908E-08"
+        ixy="-4.11226171434846E-09"
+        ixz="-2.48010413305405E-12"
+        iyy="4.51752802734697E-08"
+        iyz="2.70683189103996E-12"
+        izz="4.68880164013037E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RLittle_3.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_RLittle_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_RLittle_3"
+    type="fixed">
+    <origin
+      xyz="0.02 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_RLittle_2" />
+    <child
+      link="Link_RLittle_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_RLittle_2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  
+  
+  
+  
+  
+  
+  <link
+    name="Link_LThumb_1">
+    <inertial>
+      <origin
+        xyz="0.0140531162949827 -0.00104268543106537 -0.000493648513063605"
+        rpy="0 0 0" />
+      <mass
+        value="0.00760047786360614" />
+      <inertia
+        ixx="7.53787273775299E-07"
+        ixy="-8.57396632083256E-09"
+        ixz="-1.8466777870601E-08"
+        iyy="6.96692759358884E-07"
+        iyz="-1.51070311033017E-08"
+        izz="4.84381509426281E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LThumb_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LThumb_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LThumb_1"
+    type="revolute">
+    <origin
+      xyz="0.003 -0.045397 -0.03103"
+      rpy="3.1416 1.4835 1.5708" />
+    <parent
+      link="Link_LWrist" />
+    <child
+      link="Link_LThumb_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_LThumb_2">
+    <inertial>
+      <origin
+        xyz="0.0173128074198611 -0.000134050024399854 -2.83364972042399E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.00708330299375238" />
+      <inertia
+        ixx="5.0403773219725E-07"
+        ixy="-9.97324524798674E-10"
+        ixz="1.28982925813022E-12"
+        iyy="6.96874259283379E-07"
+        iyz="7.56952402167825E-13"
+        izz="5.78436207553767E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LThumb_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LThumb_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LThumb_2"
+    type="fixed">
+    <origin
+      xyz="0.029885 0 -0.0027249"
+      rpy="0.5236 0.17453 0" />
+    <parent
+      link="Link_LThumb_1" />
+    <child
+      link="Link_LThumb_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_LThumb_1"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_LThumb_3">
+    <inertial>
+      <origin
+        xyz="0.0119388006762084 -0.00047730019740809 7.70998863086625E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.00525715307852216" />
+      <inertia
+        ixx="2.36694234055213E-07"
+        ixy="-2.70289261009951E-08"
+        ixz="1.7822669103509E-12"
+        iyy="2.94246392401849E-07"
+        iyz="1.11843996711644E-12"
+        izz="3.22805773448004E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LThumb_3.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LThumb_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LThumb_3"
+    type="fixed">
+    <origin
+      xyz="0.035 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_LThumb_2" />
+    <child
+      link="Link_LThumb_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_LThumb_2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_LIndex_1">
+    <inertial>
+      <origin
+        xyz="0.0185238926941235 -0.000125934511450237 -4.3898079343796E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00449424668185045" />
+      <inertia
+        ixx="2.15205760742586E-07"
+        ixy="-7.21084227827353E-10"
+        ixz="2.74174100189868E-11"
+        iyy="3.40383953465369E-07"
+        iyz="-1.53031275030132E-11"
+        izz="2.9368423459638E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LIndex_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LIndex_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LIndex_1"
+    type="revolute">
+    <origin
+      xyz="0.002 -0.11282 -0.03361"
+      rpy="0 0.087266 -1.5708" />
+    <parent
+      link="Link_LWrist" />
+    <child
+      link="Link_LIndex_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_LIndex_2">
+    <inertial>
+      <origin
+        xyz="0.0109552153261518 -0.000710332553002985 4.85134561079015E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00280391900446383" />
+      <inertia
+        ixx="8.91919864544343E-08"
+        ixy="-7.28832234690785E-09"
+        ixz="-3.25184358008431E-12"
+        iyy="1.11901700463453E-07"
+        iyz="6.60487637498087E-12"
+        izz="1.06518264271742E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LIndex_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LIndex_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LIndex_2"
+    type="fixed">
+    <origin
+      xyz="0.037 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_LIndex_1" />
+    <child
+      link="Link_LIndex_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_LIndex_1"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_LIndex_3">
+    <inertial>
+      <origin
+        xyz="0.0115791460796218 -0.000175668993983802 2.27407274902558E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.00254014708620773" />
+      <inertia
+        ixx="6.37572001403401E-08"
+        ixy="-8.51998145176508E-09"
+        ixz="3.24940672534732E-11"
+        iyy="8.96701351437404E-08"
+        iyz="3.87665282958097E-11"
+        izz="9.3989551172606E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LIndex_3.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LIndex_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LIndex_3"
+    type="fixed">
+    <origin
+      xyz="0.0225 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_LIndex_2" />
+    <child
+      link="Link_LIndex_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_LIndex_2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_LMajor_1">
+    <inertial>
+      <origin
+        xyz="0.0196007263892127 -0.000134756417774856 -4.07720566170111E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546384233455036" />
+      <inertia
+        ixx="2.90857369558574E-07"
+        ixy="-3.78017257718821E-10"
+        ixz="2.73536497845999E-11"
+        iyy="4.54524664173514E-07"
+        iyz="-1.97606643502405E-11"
+        izz="3.92361454639841E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LMajor_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LMajor_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LMajor_1"
+    type="revolute">
+    <origin
+      xyz="0.002 -0.1145 -0.006"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="Link_LWrist" />
+    <child
+      link="Link_LMajor_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_LMajor_2">
+    <inertial>
+      <origin
+        xyz="0.011648659647293 -0.000702187075681621 2.83467225664635E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00351617615034127" />
+      <inertia
+        ixx="1.2665473921092E-07"
+        ixy="-9.89893428524157E-09"
+        ixz="-3.86716247516594E-12"
+        iyy="1.59849605832734E-07"
+        iyz="6.05240750323787E-12"
+        izz="1.52788073698646E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LMajor_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LMajor_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LMajor_2"
+    type="fixed">
+    <origin
+      xyz="0.039 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_LMajor_1" />
+    <child
+      link="Link_LMajor_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_LMajor_1"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_LMajor_3">
+    <inertial>
+      <origin
+        xyz="0.012035794559891 -0.000216811906078834 2.66904889301145E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00311182147382576" />
+      <inertia
+        ixx="8.93863383928476E-08"
+        ixy="-1.2155883633334E-08"
+        ixz="5.60558023925288E-12"
+        iyy="1.27942785785431E-07"
+        iyz="2.58027519256053E-12"
+        izz="1.35101762137213E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LMajor_3.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LMajor_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LMajor_3"
+    type="fixed">
+    <origin
+      xyz="0.024 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_LMajor_2" />
+    <child
+      link="Link_LMajor_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_LMajor_2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_LRing_1">
+    <inertial>
+      <origin
+        xyz="0.0185239004568853 -0.000125938538401649 -4.56140695048735E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00449425011182624" />
+      <inertia
+        ixx="2.15205903498141E-07"
+        ixy="-7.21266486632116E-10"
+        ixz="2.73382005658042E-11"
+        iyy="3.40384034583528E-07"
+        iyz="-1.60735990932371E-11"
+        izz="2.93684052748277E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LRing_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LRing_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LRing_1"
+    type="revolute">
+    <origin
+      xyz="0.002 -0.1122 0.02161"
+      rpy="0 -0.087266 -1.5708" />
+    <parent
+      link="Link_LWrist" />
+    <child
+      link="Link_LRing_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_LRing_2">
+    <inertial>
+      <origin
+        xyz="0.0109552129958177 -0.000710333116316714 4.85730358379399E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00280391977459406" />
+      <inertia
+        ixx="8.91919813738997E-08"
+        ixy="-7.2883363611804E-09"
+        ixz="-3.26872199705741E-12"
+        iyy="1.1190174914146E-07"
+        iyz="6.58398720839396E-12"
+        izz="1.06518289168796E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LRing_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LRing_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LRing_2"
+    type="fixed">
+    <origin
+      xyz="0.037 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_LRing_1" />
+    <child
+      link="Link_LRing_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_LRing_1"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_LRing_3">
+    <inertial>
+      <origin
+        xyz="0.0115797299515769 -0.000175731453149391 2.13376914756647E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.00254037252709634" />
+      <inertia
+        ixx="6.37570356284761E-08"
+        ixy="-8.51698990824186E-09"
+        ixz="3.31923567266008E-11"
+        iyy="8.96878251230337E-08"
+        iyz="3.89120800116945E-11"
+        izz="9.40065725537166E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LRing_3.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LRing_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LRing_3"
+    type="fixed">
+    <origin
+      xyz="0.0225 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_LRing_2" />
+    <child
+      link="Link_LRing_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_LRing_2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_LLittle_1">
+    <inertial>
+      <origin
+        xyz="0.0152874976897833 -0.000111808019569476 -7.54820590559424E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00309307061409576" />
+      <inertia
+        ixx="1.12320111834675E-07"
+        ixy="-7.85070774682843E-10"
+        ixz="2.0298870280799E-11"
+        iyy="1.70740593663764E-07"
+        iyz="-1.57310323852134E-11"
+        izz="1.47320387901816E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LLittle_1.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LLittle_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LLittle_1"
+    type="revolute">
+    <origin
+      xyz="0.002 -0.1057 0.046247"
+      rpy="0 -0.20944 -1.5708" />
+    <parent
+      link="Link_LWrist" />
+    <child
+      link="Link_LLittle_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="Link_LLittle_2">
+    <inertial>
+      <origin
+        xyz="0.0104114961125447 -0.0005725371618924 6.13451823588962E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00171550927986535" />
+      <inertia
+        ixx="4.15271581620942E-08"
+        ixy="-2.92591626058025E-09"
+        ixz="-1.98841866539279E-12"
+        iyy="5.12637265927254E-08"
+        iyz="3.92231934205248E-12"
+        izz="4.80167291920927E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LLittle_2.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LLittle_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LLittle_2"
+    type="fixed">
+    <origin
+      xyz="0.031 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_LLittle_1" />
+    <child
+      link="Link_LLittle_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_LLittle_1"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  <link
+    name="Link_LLittle_3">
+    <inertial>
+      <origin
+        xyz="0.0106224064382969 -7.4812336857577E-05 2.3787573788514E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00169741579139509" />
+      <inertia
+        ixx="3.18966669321276E-08"
+        ixy="-4.11179052599753E-09"
+        ixz="1.0500239485452E-13"
+        iyy="4.51645759665212E-08"
+        iyz="2.6294485080187E-12"
+        izz="4.68734191967405E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LLittle_3.STL" />
+      </geometry>
+      <material
+        name="CoolGray4C">
+        <color
+          rgba="0.74 0.74 0.74 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://css_bot/meshes/Link_LLittle_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_LLittle_3"
+    type="fixed">
+    <origin
+      xyz="0.02 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_LLittle_2" />
+    <child
+      link="Link_LLittle_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0"
+      friction="0" />
+    <mimic
+      joint="Joint_LLittle_2"
+      multiplier="1"
+      offset="0" />
+  </joint>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</robot>
